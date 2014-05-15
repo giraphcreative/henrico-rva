@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Henrico FCU</title>
+	
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/respond.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<main class="container wrap">
+		
+		<header>
+			<img src="img/header.png">
+		</header>
+		
+
+		<div class="tool group">
+				
+			<div class="pad">
+				<h1>Just tell us a little about your current auto loan or expected purchase and see how much you can save with your local credit union. Go on. Put us to the test.</h1>
+			</div>
+			<div class="half right first text-center">
+				<img src="img/content-right.png" class="right-image">
+			</div>
+			<div class="half right">
+				<div class="calculator teal-dark">
+					<input type="hidden" class="rate_compare" value="1.74">
+					<p><label>Loan Amount:</label>
+						<input type="text" class="amount" placeholder="7,500"></p>
+					<p><label>Rate (APR):</label>
+						<input type="text" class="rate" placeholder="7%"></p>
+					<p><label>Term:</label>
+						<input type="text" class="term" placeholder="36m, 3y"></p>
+					<button class="accrue-calculate">Calculate My Savings</button>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="results">
+
+			<h2 class="large-title">Congratulations!<br>
+				You can save up to <span id="result-total"></span> in interest!</h2>
+			<button class="apply">I want to go local. <span>Apply Now</span></button>
+
+		</div>
+
+
+		<div class="footer-bar group">
+			<div class="half">
+				<a href="http://henricofcu.org/"><img src="img/logo-henrico.png"></a>
+			</div>
+			<div class="half">
+				<h2>804.266.0290</h2>
+				<h4>memberservices@henricofcu.org</h4>
+			</div>
+		</div>
+
+		<div class="fine-print wrap">
+			*APR = Annual Percentage Rate. All rates based on approved credit. Calculator based on best scenario. Your savings may be different based on your unique situation and creditworthiness. This credit union is insured by the National Credit Union Administration.
+		</div>
+
+	</main>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

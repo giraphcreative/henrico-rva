@@ -1,0 +1,140 @@
+
+
+// color variables
+$teal-dark: #165D81;
+$teal-light: #30A3C7;
+$tan: #EADCCB;
+
+
+// some classes to apply background colors.
+.teal-dark { background: $teal-dark; }
+.teal-light { background: $teal-light; }
+.teal-dark, .teal-light { color: white; }
+
+
+@import "reset";
+
+@import "fonts";
+
+@import "mixins";
+
+@import "base";
+
+@import "grid";
+
+
+
+// background-container
+.container {
+	background: url(../img/bg-body.jpg) center center;
+	background-size: cover;
+	padding-bottom: 40px;
+
+	@include respond-to( 1220px ) {
+		margin: 30px 0;
+		box-shadow: 0 0 25px rgba( 0, 0, 0, 0.4 );
+	}
+}
+
+
+
+// wrap div
+.wrap {
+	max-width: 1220px;
+	margin: 0 auto;
+	position: relative;
+	@include clearfix;
+}
+
+
+
+// padding div that'll resize for larger screens.
+.pad {
+	padding: 30px 20px;
+
+	@include respond-to( 768px ) { padding: 30px 50px; }
+	@include respond-to( 1025px ) { padding: 40px 70px; }
+}
+
+
+
+// tool styles
+.tool {
+
+	h1 {
+		margin-bottom: 20px;
+	}
+	
+	.calculator {
+		padding: 20px 15px;
+		
+		@include respond-to( 768px ) { 
+			padding: 30px 20px; 
+			border-radius: 20px;
+		}
+	}
+
+	.half.right.first {
+		padding: 20px;
+
+		@include respond-to( 768px ) {
+			padding: 0 20px 0;
+		}
+	}
+}
+
+
+
+// results styles
+.results {
+	display: none;
+	@extend .pad;
+}
+
+
+
+// footer styles
+.footer-bar {
+	background: $teal-light;
+	color: white;
+	padding: 30px 20px;
+	text-align: center;
+
+	h2, h4 {
+		color: white;
+		@include font;
+
+		@include respond-to( 768px ) {
+			@include font-bold;
+		}
+	}
+
+	h2 {
+		font-size: 3em;
+		@include respond-to( 768px ) { font-size: 3.5em; }
+	}
+
+	h4 {
+		font-size: 17px;
+		@include respond-to( 768px ) { font-size: 26px; }
+	}
+
+	.sixty, .fourty {
+		text-align: center;
+	}
+
+	@include respond-to( 768px ) {
+		margin-top: 30px;
+	}
+}
+
+
+.fine-print {
+	padding: 20px;
+	color: darken( $tan, 50% );
+
+	img {
+		float: right;
+		margin: 0 0 15px 15px;
+	}
+}

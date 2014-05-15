@@ -1,0 +1,14 @@
+
+// include our fonts
+@import url(http://fonts.googleapis.com/css?family=Jura:400,600);
+
+// sans-serif mixin
+@mixin font {
+	font-family: "Jura", sans-serif;
+	font-weight: 400;
+}
+
+// bold face
+@mixin font-bold {
+	font-weight: 600;
+}
