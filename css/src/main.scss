@@ -4,6 +4,7 @@
 $teal-dark: #165D81;
 $teal-light: #30A3C7;
 $tan: #EADCCB;
+$red: #BE1E2D;
 
 
 // some classes to apply background colors.
@@ -60,17 +61,17 @@ $tan: #EADCCB;
 
 // tool styles
 .tool {
-
-	h1 {
-		margin-bottom: 20px;
-	}
 	
 	.calculator {
-		padding: 20px 15px;
+		padding: 20px 15px 30px;
 		
 		@include respond-to( 768px ) { 
-			padding: 30px 20px; 
+			padding: 30px 20px 40px; 
 			border-radius: 20px;
+		}
+
+		@include respond-to( 1024px ) {
+			padding: 40px;
 		}
 	}
 
@@ -89,6 +90,25 @@ $tan: #EADCCB;
 .results {
 	display: none;
 	@extend .pad;
+}
+
+
+
+// large titles
+
+
+
+
+// big ole apply button
+button.apply {
+	padding: 20px 15px;
+
+	@include respond-to( 768px ) { 
+		padding: 30px 20px;
+		display: inline;
+		width: auto;
+		margin: 0 25%;
+	}
 }
 
 
