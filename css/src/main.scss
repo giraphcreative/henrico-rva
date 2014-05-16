@@ -98,7 +98,7 @@ $red: #BE1E2D;
 		text-align: center;
 		color: $teal-dark;
 
-		@include respond-to( 768 ) {
+		@include respond-to( 768px ) {
 			font-size: 3em;
 			padding: 10px 20px;
 		}
