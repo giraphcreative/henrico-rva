@@ -27,10 +27,6 @@ a {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 10px 0;
-
-	span {
-		color: #999;
-	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -105,4 +101,10 @@ input[type=submit], button, .btn {
 	border: 0;
 	border-radius: 10px;
 	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		color: white;
+		opacity: .9;
+	}
 }

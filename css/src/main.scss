@@ -86,30 +86,55 @@ $red: #BE1E2D;
 
 
 
+
 // results styles
 .results {
 	display: none;
 	@extend .pad;
-}
 
+	// large title
+	.large-title {
+		font-size: 2em;
+		text-align: center;
+		color: $teal-dark;
 
-
-// large titles
-
-
-
-
-// big ole apply button
-button.apply {
-	padding: 20px 15px;
-
-	@include respond-to( 768px ) { 
-		padding: 30px 20px;
-		display: inline;
-		width: auto;
-		margin: 0 25%;
+		@include respond-to( 768 ) {
+			font-size: 3em;
+			padding: 10px 20px;
+		}
 	}
+
+	// big ole apply button
+	a.apply {
+		padding: 30px 15px;
+		font-size: 30px;
+		line-height: 35px;
+		margin: 20px 0;
+
+		span {
+			display: block;
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 45px;
+		}
+
+		@include respond-to( 768px ) { 
+			padding: 50px 20px;
+			width: 50%;
+			margin: 40px 25% 15px;
+			font-size: 35px;
+			line-height: 40px;
+
+			span {
+				font-size: 45px;
+				line-height: 50px;
+			}
+		}
+	}
+
 }
+
+
 
 
 
