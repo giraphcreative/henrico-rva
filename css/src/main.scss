@@ -10,7 +10,17 @@ $red: #BE1E2D;
 // some classes to apply background colors.
 .teal-dark { background: $teal-dark; }
 .teal-light { background: $teal-light; }
-.teal-dark, .teal-light { color: white; }
+.teal-dark, .teal-light { 
+	color: white;
+
+	& a {
+		color: white;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+}
 
 
 @import "reset";
