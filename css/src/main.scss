@@ -48,6 +48,19 @@ $red: #BE1E2D;
 }
 
 
+// header styles
+header {
+	position: relative;
+
+	.logo {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		max-width: 35%;
+	}
+
+}
+
 
 // wrap div
 .wrap {
@@ -138,6 +151,39 @@ $red: #BE1E2D;
 			span {
 				font-size: 45px;
 				line-height: 50px;
+			}
+		}
+	}
+
+	table {
+		margin: 30px auto 0;
+
+		tr {
+
+			th, td:first-child {
+				opacity: .5;
+				font-weight: bold;
+				text-align: center;
+			}
+	
+
+			td {
+				padding: 10px;
+				text-align: center;
+				font-size: 1.3em;
+
+				&.green {
+					color: $teal-dark;
+					font-weight: bold;
+				}
+
+				&.strike {
+					opacity: .8;
+				}
+
+				&.green, &.strike {
+					min-width: 150px;
+				}
 			}
 		}
 	}
