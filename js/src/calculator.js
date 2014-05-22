@@ -21,7 +21,7 @@ $(function(){
 			} else {
 				$(".tool").slideUp( "slow" );
 				$(".results").slideDown( "slow" );
-				ga('send', 'event', 'button', 'click', 'calculate', data.savings.toFixed(0) );
+				ga('send', 'event', 'button', 'click', 'calculate', data.loan_2_total_payments - data.loan_2_total_interest );
 
 				$("body, html").animate({ 
 					scrollTop: $( ".tool" ).offset().top 
