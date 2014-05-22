@@ -21,7 +21,7 @@ $(function(){
 			} else {
 				$(".tool").slideUp( "slow" );
 				$(".results").slideDown( "slow" );
-				ga('send', 'event', 'button', 'click', 'calculate', data.savings.toFixed(2) );
+				ga('send', 'event', 'button', 'click', 'calculate' );
 
 				$("body, html").animate({ 
 					scrollTop: $( ".tool" ).offset().top 
