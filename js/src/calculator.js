@@ -26,7 +26,7 @@ $(function(){
 			} else {
 				$(".tool").slideUp( "slow" );
 				$(".results").slideDown( "slow" );
-				ga('send', 'event', 'button', 'click', 'calculate-savings', data.savings.toFixed(2) );
+				ga('send', 'event', 'button', 'click', 'calculate', data.savings.toFixed(2) );
 			}
 		}
 	});
