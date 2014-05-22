@@ -22,6 +22,10 @@ $(function(){
 				$(".tool").slideUp( "slow" );
 				$(".results").slideDown( "slow" );
 				ga('send', 'event', 'button', 'click', 'calculate', data.savings.toFixed(2) );
+
+				$("body, html").animate({ 
+					scrollTop: $( ".tool" ).offset().top 
+				}, 1000);
 			}
 		}
 	});
