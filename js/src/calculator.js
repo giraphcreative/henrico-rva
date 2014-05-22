@@ -27,6 +27,7 @@ $(function(){
 				$(".tool").slideUp( "slow" );
 				$(".results").slideDown( "slow" );
 			}
+			ga('send', 'event', 'button', 'click', 'calculate');
 		}
 	});
 
