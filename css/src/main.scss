@@ -51,12 +51,26 @@ $red: #BE1E2D;
 // header styles
 header {
 	position: relative;
+	
+	a {
+		opacity: .7;
+		transition: opacity 400ms ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 
 	.logo {
 		position: absolute;
-		top: 30px;
-		right: 30px;
-		max-width: 35%;
+		top: 4px;
+		right: 4px;
+		max-width: 30%;
+
+		@include respond-to( 800px ) {
+			top: 30px;
+			right: 30px;
+		}
 	}
 
 }
