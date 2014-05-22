@@ -168,6 +168,10 @@ header {
 			}
 		}
 	}
+	
+	.result-table {
+		overflow-x: auto;
+	}
 
 	table {
 		margin: 30px auto 0;
@@ -185,6 +189,7 @@ header {
 				padding: 10px;
 				text-align: center;
 				font-size: 1.3em;
+				white-space: nowrap;
 
 				&.green {
 					color: $teal-dark;
@@ -195,9 +200,11 @@ header {
 					opacity: .8;
 				}
 
-				&.green, &.strike {
-					min-width: 150px;
-				}
+				@include respond-to( 768px ) {
+					&.green, &.strike {
+						min-width: 150px;
+					}
+				} 
 			}
 		}
 	}
