@@ -251,6 +251,13 @@ header {
 	@include respond-to( 768px ) {
 		margin-top: 30px;
 	}
+
+	.half.separator {
+		@include respond-to( 768px ) {
+			width: 46.5%;
+			border-right: 1px solid $tan;
+		}
+	}
 }
 
 
