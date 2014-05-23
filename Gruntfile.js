@@ -56,6 +56,7 @@ module.exports = function(grunt) {
                         '<%= jsSrcDir %>/*.js',
                     ],
                     '<%= jsDir %>/head.js': [
+                        '<%= jsLibDir %>/css-browser-selector.js',
                         '<%= jsLibDir %>/html5shiv.js',
                         '<%= jsLibDir %>/respond.js',
                     ],
